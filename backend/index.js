@@ -14,14 +14,14 @@ app.use(cors({
 }))
 app.use(express.static(path.join(__dirname,"frontend","dist")))
 app.use(express.json())
-app.get("/", (req, res) => {
+app.all("/{*any}", (req, res) => {
     res.send("Hello world")
 })
 app.use("/api/v1/listing", listingRoute)
 app.use("/api/v1/booking", bookingRoute)
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend','dist', 'index.html'))
+app.get("{*any}", (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend','dist'))
 })
 const main =()=>{
     app.listen(3000)
