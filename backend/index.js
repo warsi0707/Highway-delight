@@ -14,7 +14,7 @@ app.use(cors({
 }))
 app.use(express.static(path.join(__dirname,"frontend","dist")))
 app.use(express.json())
-app.all("/{*any}", (req, res) => {
+app.all("/", (req, res) => {
     res.send("Hello world")
 })
 app.use("/api/v1/listing", listingRoute)
