@@ -1,7 +1,7 @@
 import { memo, useEffect, useState } from "react";
 import PayButton from "./PayButton";
 import { useDispatch, useSelector } from "react-redux";
-import { handleTotal } from "../redux/slice/ListingSlice";
+import { handleTotal } from "../redux/slice/listingSlice";
 import { useNavigate } from "react-router";
 
 function PaymentCard({price, taxes,title}) {

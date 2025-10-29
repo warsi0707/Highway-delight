@@ -95,7 +95,7 @@ const listingSlice = createSlice({
             state.listing = action.payload
         })
         .addCase(searchListing.fulfilled, (state, action) =>{
-            state.listing = action.payload;
+            state.listing = action.payload;  
             state.loading = false;
             state.error = false;
         })

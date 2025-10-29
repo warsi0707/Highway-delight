@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import {Link} from "react-router"
-import { searchListing } from "../redux/slice/ListingSlice"
+import { searchListing } from "../redux/slice/listingSlice"
 
 export default function Navbar(){
     const disptach = useDispatch()

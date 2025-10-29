@@ -4,7 +4,7 @@ import TimeButton from "../components/TimeButton"
 import PaymentCard from "../components/PaymentCard"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
-import { getListingById } from "../redux/slice/ListingSlice"
+import { getListingById } from "../redux/slice/listingSlice"
 
 export default function Listing(){
     const dispatch = useDispatch()

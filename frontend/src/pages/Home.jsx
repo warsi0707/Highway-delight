@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Card from "../components/Card";
 import {useDispatch, useSelector} from "react-redux"
-import { getListings } from "../redux/slice/ListingSlice";
+import { getListings } from "../redux/slice/listingSlice";
 
 
 export default function Home(){
