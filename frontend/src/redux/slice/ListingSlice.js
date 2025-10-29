@@ -59,7 +59,7 @@ const listingSlice = createSlice({
             localStorage.setItem('quantity', action.payload.quantity)
             localStorage.setItem('title', action.payload.title)
             localStorage.setItem('taxes', action.payload.taxes)
-        }
+        },
     },
     extraReducers: (builder)=>{
         builder.addCase(getListings.pending, (state)=>{
