@@ -6,7 +6,7 @@ const bookingRoute = require('./routes/Booking')
 const app = express()
 const cors = require('cors')
 const { FRONTEND_URL } = require('./config/Config')
-
+const path = require("path")
 ConnectDB()
 
 app.use(cors({
